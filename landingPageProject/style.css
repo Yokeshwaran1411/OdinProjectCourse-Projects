@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --dark-backgroud: #1f2937;
+    --hero-font: #f9faf8;
+    --secondary-font: #e5e7eb;
+    --button-color: #3882f6;
+    --info-text: #1f2937;
+    --quote-background: #e5e7eb;
+    --quote-text: #1f2937;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home {
+    background: var(--dark-backgroud);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* color: ; */
+}
+
+.home h3 {
+    font-size: 24px;
+    color: var(--hero-font);
+    font-weight: 900;
+}
+
+.home ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    font-size: 18px;
+}
+
+.home ul li {
+    color: var(--secondary-font);
+    border-bottom: 3px solid transparent;
+    transition: all .3s ease-in-out;
+}
+
+.home ul li:hover{
+    border-color: var(--button-color);
+}
+
+.home nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+.home .container {
+    display: flex;
+    justify-content: last baseline;
+    align-items: center;
+    flex-direction: row;
+    height: 400px;
+    width: 100vw;
+}
+
+.home .container h3 {
+    font-size: 48px;
+}
+
+.home .left-container {
+    margin-left: 23rem;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    flex-direction: column;
+    height: inherit;
+}
+
+.home .left-container p {
+    color: var(--secondary-font);
+    width: 65%;
+}
+
+.home .left-container button,
+.info .img-container button,
+.signup .button-container button {
+    background: var(--button-color);
+    color: var(--hero-font);
+    width: 200px;
+    height: 45px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        transform: scale(1.15);
+    }
+}
+
+.home .right-container {
+    width: 40%;
+    object-fit: cover;
+}
+
+.home .right-container img {
+    width: 500px;
+    height: 350px;
+    border-radius: 25px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-direction: row;
+    width: 90vw;
+    height: 400px;
+}
+
+.info .container img {
+    height: 150px;
+    width: 250px;
+    border-radius: 15px;
+    border: 3px solid var(--button-color);
+}
+
+.info h3 {
+    margin-top: 2rem;
+}
+
+.info .img-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+}
+
+.quote {
+    background: var(--quote-background);
+    color: var(--quote-text);
+    font-style: italic;
+    font-size: 28px;
+}
+
+.signup .container {
+    background: var(--button-color);
+    width: 60%;
+    height: 110px;
+    border-radius: 15px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.signup .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: var(--secondary-font);
+}
+
+.signup .button-container button {
+    border: 3px solid var(--hero-font);
+}
+
+.footer {
+    min-height: 85px;
+    background: var(--dark-backgroud);
+    color: var(--hero-font);
+}
+
+@keyframes buttonAnimation{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.25);
+    }
+}
