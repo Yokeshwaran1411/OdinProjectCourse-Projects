@@ -1,0 +1,5 @@
+[
+  { "id": 1, "Item": "Rock", "Emoji": "🪨" },
+  { "id": 2, "Item": "Paper", "Emoji": "📄" },
+  { "id": 3, "Item": "Scissors", "Emoji": "✂️" }
+]
